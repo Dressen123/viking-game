@@ -1,13 +1,13 @@
 extends CharacterBody2D
  
  
-var speed= 40
+var speed= 45
 var player_chase = false
 var player = null
  
 func _physics_process(delta):
 	if player_chase:
-		position += (player.position - position)/speed
+		position += (position - player.position)/speed
 		$AnimatedSprite2D.play("run")
 
  

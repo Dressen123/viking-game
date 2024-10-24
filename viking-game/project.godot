@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="Viking Game"
-run/main_scene="res://world/world.tscn"
+run/main_scene="res://world/titlescreen.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [input]
 
